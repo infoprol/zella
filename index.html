@@ -1,0 +1,84 @@
+<html>
+  <head>
+    <title>recovering girl-blogger</title>
+
+    <link rel="stylesheet" class="theme" href="css/garden.css" type="text/css" />
+    
+    
+    <script type="text/javascript">
+        var toggle = true;
+
+        function onloadHandler() {
+          var but = document.getElementById('zdog');
+          but.style.height = '69px';
+          but.style.width = '420px';
+          
+          function onButClick(evt) {
+            evt.stopPropagation();
+            var d = document.getElementById('divsux');
+            d.style.backgroundColor = toggle ? '#A52A2A' : '#FF0099';
+            toggle = !toggle;
+            return false;
+          }
+        
+          function pickTheme(evt) {
+
+            
+
+            var sheet = document.getElementsByClassName("theme")[0];
+            if (value == null) {
+              if (localStorage.getItem("theme") == null) {
+                value = "icy";
+              } else {
+                value = localStorage.getItem("theme");
+              }
+            }
+            localStorage.setItem("theme", value);
+            sheet.setAttribute("href", "!f/v4/" + value + "/style.css");
+            return false;
+          }
+          but.onclick = pickTheme;
+      }
+
+   </script>
+  
+  
+  </head>
+
+  
+  <body onload="onloadHandler();">
+  
+    <div id="divsux" class="box">
+      <p>one day you'll choke on your vomit, and
+        <em>that</em> will be <i>that</i>
+      </p>
+    
+
+
+    <form id="form" method="post" action="./zella.html">
+      <button id="zdog" type="submit" name="change color">
+        KYS u faggit
+      </button>
+    </form>
+
+  </div>
+
+
+    <nav id="nav" class="box">
+      <h3 class="personal">Personal</h3>
+
+        <a href="#">home</a>
+        <a href="#">about</a>
+        <a href="#">contact</a>
+      
+        <h3 class="media">media</h3>
+        <a href="#">blog</a>
+    </nav>
+
+
+
+
+  </body>
+
+
+</html>
